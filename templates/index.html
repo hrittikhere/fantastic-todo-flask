@@ -84,7 +84,7 @@
       <tbody>
         {% for todo in allTodo %}
         <tr>
-          <th scope="row">{{todo.sno}}</th>
+          <th scope="row">{{loop.index}}</th>
           <td>{{todo.title}}</td>
           <td>{{todo.desc}}</td>
           <td>{{todo.date_created}}</td>
